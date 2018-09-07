@@ -8,8 +8,8 @@ While I'm studying master in computer engineering I used optimization algorithms
 
 ## Unimodal benchmark functions
 
-* [Sphere](http://benchmarkfcns.xyz/benchmarkfcns/spherefcn.html)
-* [Schwefel 2.22](http://benchmarkfcns.xyz/benchmarkfcns/schwefel222fcn.html)
-* [Schwefel 1.2](http://al-roomi.org/benchmarks/unconstrained/n-dimensions/188-schwefel-s-function-no-1-2-double-sum-or-rotated-hyper-ellipsoid-function)
-* [Schwefel 2.21](http://benchmarkfcns.xyz/benchmarkfcns/schwefel221fcn.html)
-* [Rosenbrock](https://en.wikipedia.org/wiki/Rosenbrock_function)
+* [Sphere (f1)](http://benchmarkfcns.xyz/benchmarkfcns/spherefcn.html)
+* [Schwefel 2.22 (f2)](http://benchmarkfcns.xyz/benchmarkfcns/schwefel222fcn.html)
+* [Schwefel 1.2 (f3)](http://al-roomi.org/benchmarks/unconstrained/n-dimensions/188-schwefel-s-function-no-1-2-double-sum-or-rotated-hyper-ellipsoid-function)
+* [Schwefel 2.21 (f4)](http://benchmarkfcns.xyz/benchmarkfcns/schwefel221fcn.html)
+* [Rosenbrock (f5)](https://en.wikipedia.org/wiki/Rosenbrock_function)
