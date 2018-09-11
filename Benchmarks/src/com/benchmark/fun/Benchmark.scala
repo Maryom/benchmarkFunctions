@@ -7,15 +7,18 @@ import breeze.stats.distributions._
 
 object Benchmark {
 
+  // Sphere
   def f1(x: Array[Double]) = {
     sum(x.map(pow(_, 2)))
   }
 
+  // Schwefel 2.22
   def f2(x: Array[Double]) = {
 
     sum(x.map { _.abs }) + x.map { _.abs }.product
   }
 
+  // Schwefel 1.2
   def f3(x: Array[Double]) = {
 
     val dim = x.length
@@ -28,11 +31,13 @@ object Benchmark {
     result
   }
 
+  // Schwefel 2.21
   def f4(x: Array[Double]) = {
 
     max(x.map { _.abs })
   }
 
+  // Rosenbrock
   def f5(x: Array[Double]) = {
 
     val dim = x.length
@@ -40,6 +45,22 @@ object Benchmark {
     val tmp = x.slice(0, dim - 1)
 
     sum(pow((x.slice(1, dim) - pow(tmp, 2)), 2).map(_ * 100).zip(pow(tmp.map(_ - 1), 2)).map { case (a, b) => a + b })
+  }
+  
+  // Rastrigin
+  def f6(x: Array[Double]) = {
+
+    val dim = x.length
+    
+    sum(x.map(i=>pow(i, 2)-10*cos(2*i*(constants.Pi))+10))
+  }
+  
+  // Ackley
+  def f7(x: Array[Double]) = {
+
+    val dim = x.length
+    
+    -20*exp(-0.2*sqrt(sum(x.map(pow(_, 2)))/dim)) - exp(sum(x.map(i=>cos(2*i*(constants.Pi))))/dim)+20+exp(1.0)
   }
 
   def Get_Functions_details(fun: String, x: Array[Double]): (Double, Double, Int, Double) = {
@@ -50,6 +71,8 @@ object Benchmark {
       case "f3" => return (-100.0, 100.0, 30, f3(x))
       case "f4" => return (-100.0, 100.0, 30, f4(x))
       case "f5" => return (-30.0, 30.0, 30, f5(x))
+      case "f6" => return (-5.12, 5.12, 30, f6(x))
+      case "f7" => return (-32, 32, 30, f7(x))
       case _    => return (0.0, 0.0, 0, 0.0)
     }
   }

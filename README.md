@@ -13,3 +13,8 @@ While I'm studying master in computer engineering I used optimization algorithms
 * [Schwefel 1.2 (f3)](http://al-roomi.org/benchmarks/unconstrained/n-dimensions/188-schwefel-s-function-no-1-2-double-sum-or-rotated-hyper-ellipsoid-function)
 * [Schwefel 2.21 (f4)](http://benchmarkfcns.xyz/benchmarkfcns/schwefel221fcn.html)
 * [Rosenbrock (f5)](https://en.wikipedia.org/wiki/Rosenbrock_function)
+
+## Multimodal benchmark functions
+
+* [Rastrigin (f6)](https://www.sfu.ca/~ssurjano/rastr.html)
+* [Ackley (f7)](https://www.sfu.ca/~ssurjano/ackley.html)
