@@ -18,3 +18,10 @@ While I'm studying master in computer engineering I used optimization algorithms
 
 * [Rastrigin (f6)](https://www.sfu.ca/~ssurjano/rastr.html)
 * [Ackley (f7)](https://www.sfu.ca/~ssurjano/ackley.html)
+* [Griewank (f11)](https://en.wikipedia.org/wiki/Griewank_function)
+
+
+## Composite benchmark functions
+* CF3 (F16)
+* CF4 (F17)
+* CF5 (F18)
